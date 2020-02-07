@@ -42,7 +42,7 @@ public class HiloConexion extends Thread {
         }
         System.out.println("Aceptando conexiones");
 
-        while(serverSocket.isClosed()){
+        while(serverSocket!=null){
 
             Socket newSocket= null;
             try {

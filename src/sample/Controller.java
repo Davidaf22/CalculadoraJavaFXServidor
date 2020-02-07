@@ -36,6 +36,7 @@ public class Controller {
     void desconexion (ActionEvent event) throws IOException {
 
         System.out.println("Cerrando socket");
+        hilo.setServerSocket(null);
         hilo.getServerSocket().close();
 
 
